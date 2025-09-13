@@ -54,3 +54,11 @@ def bgmi(self, message_object, author_id, thread_id, thread_type, message):
             )
         except Exception:
             pass
+
+
+# 🚀 Khởi động bot như main.py gốc
+from core.bot_sys import Bot
+
+if __name__ == "__main__":
+    bot = Bot(prefix=".")
+    bot.run()
